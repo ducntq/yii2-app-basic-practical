@@ -1,28 +1,32 @@
-Yii 2 Basic Application Template
+Yii 2 Basic Practical Application Template
 ================================
 
-Yii 2 Basic Application Template is a skeleton Yii 2 application best for
+Yii 2 Basic Practical Application Template is a skeleton Yii 2 application best for
 rapidly creating small projects.
 
 The template contains the basic features including user login/logout and a contact page.
 It includes all commonly used configurations that would allow you to focus on adding new
 features to your application.
 
+Also, the Yii 2 Basic Practical Application Template has a structure that is compatible with
+almost all hosting provider, so that you won't have to worry when pushing your Yii 2 web application
+to the Internet.
+
 
 DIRECTORY STRUCTURE
 -------------------
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+      protected/assets/             contains assets definition
+      protected/commands/           contains console commands (controllers)
+      protected/config/             contains application configurations
+      protected/controllers/        contains Web controller classes
+      protected/mail/               contains view files for e-mails
+      protected/models/             contains model classes
+      protected/runtime/            contains files generated during runtime
+      protected/tests/              contains various tests for the basic application
+      protected/vendor/             contains dependent 3rd-party packages
+      protected/views/              contains view files for the Web application
+      /                             contains the entry script and Web resources
 
 
 
@@ -37,13 +41,13 @@ INSTALLATION
 
 ### Install from an Archive File
 
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
+Extract the archive file downloaded from [github.com/ducntq/yii2-app-basic-practical/releases](https://github.com/ducntq/yii2-app-basic-practical/releases)
+to a directory named `basic` that is directly under the Web root.
 
 You can then access the application through the following URL:
 
 ~~~
-http://localhost/basic/web/
+http://localhost/basic/
 ~~~
 
 
@@ -56,14 +60,14 @@ You can then install this application template using the following command:
 
 ~~~
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
+php composer.phar create-project --prefer-dist --stability=dev ducntq/yii2-app-basic-practical basic
 ~~~
 
 Now you should be able to access the application through the following URL, assuming `basic` is the directory
 directly under the Web root.
 
 ~~~
-http://localhost/basic/web/
+http://localhost/basic/
 ~~~
 
 
@@ -72,7 +76,7 @@ CONFIGURATION
 
 ### Database
 
-Edit the file `config/db.php` with real data, for example:
+Edit the file `protected/config/db.php` with real data, for example:
 
 ```php
 return [
