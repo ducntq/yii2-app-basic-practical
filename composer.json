@@ -19,7 +19,8 @@
         "yiisoft/yii2-faker": "*"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "vendor-dir": "protected/vendor"
     },
     "scripts": {
         "post-create-project-cmd": [
@@ -36,12 +37,12 @@
                 }
             ],
             "generateCookieValidationKey": [
-                "config/web.php"
+                "protected/config/web.php"
             ]
         },
         "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
+            "npm-asset-library": "protected/vendor/npm",
+            "bower-asset-library": "protected/vendor/bower"
         }
     }
 }
